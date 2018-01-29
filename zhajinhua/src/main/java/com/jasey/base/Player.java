@@ -58,6 +58,11 @@ public class Player {
     }
 
     public double getWinRate(){
-        return (double)winNum / (double)totalNum;
+        return ((double)winNum / (double)totalNum)*100;
+    }
+
+    public void clearLog(){
+        winNum = 0;
+        totalNum = 0;
     }
 }

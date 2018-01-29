@@ -35,11 +35,11 @@ public class Play {
                 //收牌
                 OrderManager.recoverCards(players);
 
-
             }
 
             for (int k = 0; k < players.length; k++) {
                 System.out.println(String.format("player %s 's win : %.2f", players[k].getIndex(), players[k].getWinRate()));
+                players[k].clearLog();
             }
 
             System.out.println("==================================");
