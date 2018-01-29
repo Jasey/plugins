@@ -8,7 +8,6 @@ import java.util.*;
 
 public class Rule {
     public static int getWinner(List<GameInfo> gameInfoList){
-
         Map<Integer, GameInfo> gameInfoMap = new HashMap<Integer, GameInfo>();
         for (int i = 0; i < gameInfoList.size(); i++){
             gameInfoMap.put(gameInfoList.get(i).getPlayerIndex(), gameInfoList.get(i));
@@ -105,7 +104,7 @@ public class Rule {
             Collections.sort(gameList, new Comparator<GameInfo>() {
                 public int compare(GameInfo o1, GameInfo o2) {
                     int num1 = getFixCountCardNum(o1.getCards(), 2);
-                    int num2 = getFixCountCardNum(o1.getCards(), 2);
+                    int num2 = getFixCountCardNum(o2.getCards(), 2);
                     if (num1 == num2){
                         return 0 - compareCard(getSingleCard(o1.getCards()), getSingleCard(o2.getCards()));
                     }else {

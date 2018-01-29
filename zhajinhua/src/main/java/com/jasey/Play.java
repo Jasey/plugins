@@ -20,6 +20,7 @@ public class Play {
 
         for (int j = 0; j < 1000; j++) {
             for (int i = 0; i < 10; i++) {
+
                 //洗牌
                 OrderManager.washCards(5);
 

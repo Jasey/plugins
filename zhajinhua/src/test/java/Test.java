@@ -17,11 +17,11 @@ public class Test {
         card11.setNum(12);
         card11.setColor(CardColor.BLACK_ClUB);
         Card card12 = new Card();
-        card12.setNum(0);
+        card12.setNum(12);
         card12.setColor(CardColor.BLACK_ClUB);
         Card card13 = new Card();
         card13.setNum(1);
-        card13.setColor(CardColor.BLACK_ClUB);
+        card13.setColor(CardColor.READ_REC);
         cardList1.add(card11);
         cardList1.add(card12);
         cardList1.add(card13);
@@ -32,16 +32,16 @@ public class Test {
         List<Card> cardList2 = new ArrayList<Card>();
 
         Card card21 = new Card();
-        card21.setNum(11);
+        card21.setNum(10);
         card21.setColor(CardColor.BLACK_HEART);
 
         Card card22 = new Card();
-        card22.setNum(1);
+        card22.setNum(10);
         card22.setColor(CardColor.BLACK_HEART);
 
         Card card23 = new Card();
         card23.setNum(5);
-        card23.setColor(CardColor.BLACK_HEART);
+        card23.setColor(CardColor.READ_HEART);
         cardList2.add(card21);
         cardList2.add(card22);
         cardList2.add(card23);
